@@ -11,7 +11,7 @@ sysUptime = '1.3.6.1.2.1.1.3.0'
 OIDS=(sysUptime,RunningLastChanged,RunningLastSaved,StartupLastChanged)
 port='7961'
 port1='8061'
-string='galileo'
+string='****'
 devices=[('50.242.94.227',string,port),('50.242.94.227',string,port1)]
 for device in devices:
     data=snmp_get_oid(device,oid=sysUptime, display_errors=True)
